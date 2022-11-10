@@ -1,30 +1,23 @@
 package Model;
 
 public class Projects {
-	private int id;
 	private String name;
+	private int projectNo;
 	private int noOfEmployee;
-	private String totalWages;
+	private int totalWages;
 	private String address;
 	
 	public Projects() {
 		
 	}
 
-	public Projects(String name, int noOfEmployee, String totalWages, String address) {
+	public Projects(String name, int projectNo, int noOfEmployee, int totalWages, String address) {
 		super();
 		this.name = name;
+		this.projectNo = projectNo;
 		this.noOfEmployee = noOfEmployee;
 		this.totalWages = totalWages;
 		this.address = address;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getName() {
@@ -35,6 +28,14 @@ public class Projects {
 		this.name = name;
 	}
 
+	public int getProjectNo() {
+		return projectNo;
+	}
+
+	public void setProjectNo(int projectNo) {
+		this.projectNo = projectNo;
+	}
+
 	public int getNoOfEmployee() {
 		return noOfEmployee;
 	}
@@ -43,11 +44,11 @@ public class Projects {
 		this.noOfEmployee = noOfEmployee;
 	}
 
-	public String getTotalWages() {
+	public int getTotalWages() {
 		return totalWages;
 	}
 
-	public void setTotalWages(String totalWages) {
+	public void setTotalWages(int totalWages) {
 		this.totalWages = totalWages;
 	}
 
@@ -59,12 +60,11 @@ public class Projects {
 		this.address = address;
 	}
 
-
 	@Override
 	public String toString() {
-		return "Projects [id=" + id + ", name=" + name + ", noOfEmployee=" + noOfEmployee + ", totalWages=" + totalWages
-				+ ", address=" + address + ", ProjectNo=" + "]";
+		return "Projects [name=" + name + ", projectNo=" + projectNo + ", noOfEmployee=" + noOfEmployee
+				+ ", totalWages=" + totalWages + ", address=" + address + "]";
 	}
-	
+
 
 }

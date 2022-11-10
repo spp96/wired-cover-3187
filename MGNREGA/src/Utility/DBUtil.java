@@ -7,27 +7,28 @@ import java.sql.SQLException;
 public class DBUtil {
 public static Connection provideConnection() {
 		
-		Connection conn = null;
-		
-		
-		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		
-		String url= "jdbc:mysql://localhost:3306/mgnrega";
-		
-		try {
-			conn = DriverManager.getConnection(url, "root", "Patilsp@96");
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	Connection conn = null;
 	
-		return conn;
+	
+	try {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+	} catch (ClassNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
 	}
+	
+	
+	String url= "jdbc:mysql://localhost:3306/ mgnrega";
+	
+	try {
+		conn = DriverManager.getConnection(url, "root", "Patilsp@96");
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+
+	
+	return conn;
+}
 
 }

@@ -7,13 +7,13 @@ import Exceptions.*;
 import Model.*;
 
 public interface MGNREGA_DAO {
-public BDO loginbdo(String usename,String password)throws BDOExceptions;
+public BDO loginbdo(String username,String password)throws BDOExceptions;
 	
 	public GPM loginGPM(String usename,String password)throws GPMExceptions;
 	
-	public String createproject(Projects project);
+	public String createproject(Projects project) throws ProjectsExceptions;
 	
-	public String createnewGPM(GPM gpm);
+	public String createnewGPM(GPM gpm) throws GPMExceptions;
 	
 	public String allocateprojecttoGPM(int pid,int gpmid)throws ProjectsExceptions, GPMExceptions;
 	
