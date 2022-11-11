@@ -7,26 +7,33 @@ import Exceptions.*;
 import Model.*;
 
 public interface MGNREGA_DAO {
-public BDO loginbdo(String username,String password)throws BDOExceptions;
+    public BDO loginbdo(String username,String password)throws BDOExceptions;
 	
-	public GPM loginGPM(String usename,String password)throws GPMExceptions;
+	public GPM loginGPM(String username,String password)throws GPMExceptions;
 	
 	public String createproject(Projects project) throws ProjectsExceptions;
 	
 	public String createnewGPM(GPM gpm) throws GPMExceptions;
 	
-	public String allocateprojecttoGPM(int pid,int gpmid)throws ProjectsExceptions, GPMExceptions;
+    Projects allocateprojecttoGPM(String name,int pid)throws ProjectsExceptions, GPMExceptions;
 	
 	public List<Projects> listofProject()throws ProjectsExceptions;
 	
 	public List<GPM> listofGPM()throws GPMExceptions;
 	
-	public String createemployee(Employee emp);
+	public String createemployee(Employee emp) throws EmployeeExceptions;
 	
-	public List<Employee> listofEmployee()throws EmployeeExceptions;
+	public List<Employee> detailsOfEmployee()throws EmployeeExceptions;
 	
-    public List<EmployeeList> employeeUnderProject()throws ProjectsExceptions;
+	public Employee ViewDetailsEmployee(int emid) throws EmployeeExceptions;
     
-    public String assignemptoproject(int pid,int empid)throws ProjectsExceptions,EmployeeExceptions;
+    Projects assignemptoproject(int pid,int empid)throws ProjectsExceptions,EmployeeExceptions;
+    
+    public String updatePasswordOfGPM(String username, String password ) throws GPMExceptions;
+    
+    public Employee listofAllEmployeeAndTheirwages(int pid) throws EmployeeExceptions, ProjectsExceptions;
+    
+    public Projects totalNumbersOfDayAndTheirWages(int pid) throws ProjectsExceptions;
+    
 	
 }

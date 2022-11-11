@@ -7,14 +7,20 @@ public class Employee {
 	private String address;
 	private String phone;
 	private int no_of_days;
-	private int wages;
 	private int projAssigned;
 	private int gpossigned;
+	private int wages;
+	private Projects project;
+public Projects getProject() {
+		return project;
+	}
+	public void setProject(Projects project) {
+		this.project = project;
+	}
 public Employee() {
 	
 }
-public Employee(String name, String gender, String address, String phone, int no_of_days, int wages,
-		int projAssigned, int gPOAssigned) {
+public Employee(String name, String gender, String address, String phone, int no_of_days, int wages) {
 	super();
 	this.name = name;
 	this.gender = gender;
@@ -22,8 +28,6 @@ public Employee(String name, String gender, String address, String phone, int no
 	this.phone = phone;
 	this.no_of_days = no_of_days;
 	this.wages = wages;
-	this.projAssigned = projAssigned;
-	this.gpossigned = gPOAssigned;
 }
 public int getId() {
 	return id;
@@ -61,30 +65,31 @@ public int getNo_of_days() {
 public void setNo_of_days(int no_of_days) {
 	this.no_of_days = no_of_days;
 }
+public int getProjAssigned() {
+	return projAssigned;
+}
+public void setProjAssigned(int projAssigned) {
+	this.projAssigned = projAssigned;
+}
+public int getGpossigned() {
+	return gpossigned;
+}
+public void setGpossigned(int gpossigned) {
+	this.gpossigned = gpossigned;
+}
 public int getWages() {
 	return wages;
 }
 public void setWages(int wages) {
 	this.wages = wages;
 }
-public int getProjAssigned() {
-	return projAssigned;
-}
-public void setProjAssigned(int projAssigned) {
-	projAssigned = projAssigned;
-}
-public int getGPOAssigned() {
-	return gpossigned;
-}
-public void setGPOAssigned(int gPOAssigned) {
-	gpossigned = gPOAssigned;
-}
 @Override
 public String toString() {
 	return "Employee [id=" + id + ", name=" + name + ", gender=" + gender + ", address=" + address + ", phone=" + phone
-			+ ", no_of_days=" + no_of_days + ", wages=" + wages + ", projAssigned=" + projAssigned + ", gpossigned="
-			+ gpossigned + "]";
+			+ ", no_of_days=" + no_of_days + ", projAssigned=" + projAssigned + ", gpossigned=" + gpossigned
+			+ ", wages=" + wages + ", project=" + project + "]";
 }
+
 
 
 }
