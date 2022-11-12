@@ -102,8 +102,11 @@
 - Gain excessive knowledge on application of Java and MySQL.
 - Enjoyed the process of learning and creating the application.
 
-# Flow of Application
+<h3>Database Schema:</h3>
 
+![Shema](https://user-images.githubusercontent.com/102204260/201491525-7a85e92d-4d5f-42ab-93e1-5aa6a3b08be1.png)
+
+# Flow of Application
 
 ## **Application Start** 
 *Start View Of Application*
