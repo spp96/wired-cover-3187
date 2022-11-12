@@ -2,6 +2,7 @@ package Usecases;
 
 import java.util.Scanner;
 
+import CustomColors.Console;
 import Dao.MGNREGAImpl;
 import Dao.MGNREGA_DAO;
 import Exceptions.BDOExceptions;
@@ -27,7 +28,7 @@ public class LoginGPM {
 			
 		GPM gpm = dao.loginGPM(name, password);
 			
-			System.out.println("Welcome to Gram Panchayat. "+ gpm.getName());
+			System.out.println(Console.GREEN_BOLD+"Welcome to Gram Panchayat. "+ gpm.getName()+Console.RESET);
 			return true;
 			
 		} catch (GPMExceptions e) {

@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 
+import CustomColors.Console;
 import Exceptions.BDOExceptions;
 import Exceptions.EmployeeExceptions;
 import Exceptions.GPMExceptions;
@@ -43,7 +44,7 @@ public class MGNREGAImpl implements MGNREGA_DAO {
 			
 		}
 		else {
-			throw new BDOExceptions("Invalid Username or password..");
+			throw new BDOExceptions(Console.RED_BOLD+"Invalid Username or password.."+Console.RESET);
 		}
 			
 			
@@ -77,7 +78,7 @@ public class MGNREGAImpl implements MGNREGA_DAO {
 				
 			}
 			else {
-				throw new GPMExceptions("Invalid Username or password..");
+				throw new GPMExceptions(Console.RED_BOLD+"Invalid Username or password.."+Console.RESET);
 			}
 				
 				
@@ -107,7 +108,7 @@ public class MGNREGAImpl implements MGNREGA_DAO {
 			int x=ps.executeUpdate();
 			if(x>0)
 			{
-				message="Project added successfully......";
+				message=Console.GREEN_BOLD+"Project added successfully......"+Console.RESET;
 			}
 			
 			
@@ -123,7 +124,7 @@ public class MGNREGAImpl implements MGNREGA_DAO {
 	public String createnewGPM(GPM gpm) throws GPMExceptions {
 		// TODO Auto-generated method stub
 		
-       String message = "Not Inserted";
+       String message = Console.RED_BOLD+"Not Inserted"+Console.RESET;
 		
 		try (Connection conn=DBUtil.provideConnection()){
 			PreparedStatement ps = conn.prepareStatement("insert into GPM(name,address,phone,username,password) values(?,?,?,?,?)");
@@ -137,7 +138,7 @@ public class MGNREGAImpl implements MGNREGA_DAO {
 			int x=ps.executeUpdate();
 			if(x>0)
 			{
-				message="New GPM Member Added......";
+				message=Console.GREEN+"New GPM Member Added......"+Console.RESET;
 			}
 			
 			
@@ -298,7 +299,7 @@ List<GPM> GramPanchayatMember= new ArrayList<>();
 
 	@Override
 	public String createemployee(Employee emp) throws EmployeeExceptions {
-		 String message = "Not Inserted";
+		 String message = Console.RED_BOLD+"Not Inserted"+Console.RESET;
 			
 			try (Connection conn=DBUtil.provideConnection()){
 				PreparedStatement ps = conn.prepareStatement("insert into employee(name,gender,address,phone,no_duty_day,wages) values(?,?,?,?,?,?)");
@@ -429,7 +430,7 @@ List<GPM> GramPanchayatMember= new ArrayList<>();
 
 	@Override
 	public String updatePasswordOfGPM(String username, String password) throws GPMExceptions {
-		String message = "Not Updated....";
+		String message = Console.RED_BOLD+"Not Updated...."+Console.RESET;
 		
 		try (Connection conn = DBUtil.provideConnection()){
 			PreparedStatement ps =conn.prepareStatement("update gpm set password = ? where username = ?");
@@ -440,7 +441,7 @@ List<GPM> GramPanchayatMember= new ArrayList<>();
 			int x = ps.executeUpdate();
 			
 			if(x>0) {
-				message = "Password Updated Successfully.....!";
+				message = Console.GREEN_BOLD+"Password Changed Successfully.....!"+Console.RESET;
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

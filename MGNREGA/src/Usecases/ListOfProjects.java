@@ -2,6 +2,7 @@ package Usecases;
 
 import java.util.*;
 
+import CustomColors.Console;
 import Dao.MGNREGAImpl;
 import Dao.MGNREGA_DAO;
 import Exceptions.ProjectsExceptions;
@@ -18,7 +19,7 @@ public class ListOfProjects {
 			System.out.println("Project Address is:-"+ projects.getAddress());
 			System.out.println("Total Employee Working On Projects is:-"+ projects.getNoOfEmployee());
 			System.out.println("Total Wages of Project is:-"+ projects.getTotalWages());
-			System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+			System.out.println(Console.YELLOW_BOLD+"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"+Console.RESET);
 		}
 	}
 

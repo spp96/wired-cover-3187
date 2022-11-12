@@ -3,6 +3,7 @@ package Usecases;
 import java.util.Iterator;
 import java.util.List;
 
+import CustomColors.Console;
 import Dao.MGNREGAImpl;
 import Dao.MGNREGA_DAO;
 import Exceptions.GPMExceptions;
@@ -23,7 +24,7 @@ public class GPMMemberList {
 			System.out.println("Member Contact Number is:-"+ gpm.getPhone());
 			System.out.println("Member Username is:-"+ gpm.getUsername());
 			System.out.println("Member Password is:-"+ gpm.getPassword());
-			System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+			System.out.println(Console.YELLOW_BOLD+"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"+Console.RESET);
 		}
 	    
 	    

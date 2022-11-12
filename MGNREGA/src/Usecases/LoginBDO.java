@@ -2,6 +2,7 @@ package Usecases;
 
 import java.util.Scanner;
 
+import CustomColors.Console;
 import Dao.MGNREGAImpl;
 import Dao.MGNREGA_DAO;
 import Exceptions.BDOExceptions;
@@ -25,7 +26,7 @@ public class LoginBDO {
 			
 		BDO bdo = dao.loginbdo(name, password);
 			
-			System.out.println("Welcome B.D.O "+ bdo.getUsername());
+			System.out.println(Console.GREEN_BOLD+"Welcome B.D.O "+ bdo.getUsername()+Console.RESET);
 			
 			return true;
 			

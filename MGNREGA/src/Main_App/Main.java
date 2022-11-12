@@ -30,7 +30,7 @@ public class Main {
 	
 	}
 	static void BDOORGPM() {
-		System.out.println(Console.BLUE + "+---------------------------+" + "\n"
+		System.out.println(Console.DARK_BLUE + "+---------------------------+" + "\n"
 						 						   + "| 1. Login As BDO |" + "\n"
 						 						   + "| 2. Login As GPM |" + "\n"
 						 						   + "| 3. Exit                   |" + "\n"
