@@ -19,6 +19,7 @@ import Usecases.InsertNewEmployee;
 import Usecases.ListOfProjects;
 import Usecases.LoginBDO;
 import Usecases.LoginGPM;
+import Usecases.UpdatePasswordOfGPM;
 
 public class Main {
 	public static void main(String[] args) {
@@ -183,12 +184,13 @@ public class Main {
 	 	static void GPMMethods() {
 			System.out.println(Console.CYAN_BOLD + "+--------------------------------+" + "\n"
 							 + "| Welcome To GPM                                             |" + "\n"
-							 + "| 1. Create Employee                                         |" + "\n"
-							 + "| 2. View Details of Employee                                |" + "\n"
-							 + "| 3. Assign Employee to a Project                            |" + "\n"
-							 + "| 4. View total numbers of days Employee worked in a Project |" + "\n"
-							 + "| 5. Back To Login Panel                                     |" + "\n"
-							 + "| 6. Exit                                                    |" + "\n"
+							 + "| 1. Change Password                                         |" + "\n"
+							 + "| 2. Create Employee                                         |" + "\n"
+							 + "| 3. View Details of Employee                                |" + "\n"
+							 + "| 4. Assign Employee to a Project                            |" + "\n"
+							 + "| 5. View total numbers of days Employee worked in a Project |" + "\n"
+							 + "| 6. Back To Login Panel                                     |" + "\n"
+							 + "| 7. Exit                                                    |" + "\n"
 							 + "+--------------------------------+" + Console.RESET);
 			
 			Scanner sc = new Scanner(System.in);
@@ -196,7 +198,7 @@ public class Main {
 			int gchoice = 0;
 			try {
 				gchoice = sc.nextInt();
-				if (gchoice != 1 && gchoice != 2 && gchoice != 3 && gchoice != 4 && gchoice != 5 && gchoice !=6) {
+				if (gchoice != 1 && gchoice != 2 && gchoice != 3 && gchoice != 4 && gchoice != 5 && gchoice !=6 && gchoice !=7) {
 					System.out.println(Console.RED_BACKGROUND + "Please choose a number from below options" + Console.RESET);
 					GPMMethods();;
 				}
@@ -211,7 +213,12 @@ public class Main {
         static void GPMChoice(int gchoice) {
 			
 			switch(gchoice) {
-				case 1 : {
+			case 1 : {
+				UpdatePasswordOfGPM.updatePass();
+			        GPMMethods();
+		        }
+		        break;
+				case 2 : {
 						try {
 							InsertNewEmployee.insertEmp();
 						} catch (GPMExceptions e) {
@@ -225,7 +232,7 @@ public class Main {
 					GPMMethods();
 				}
 				break;
-				case 2 : {
+				case 3 : {
 					try {
 						EmployeeDetails.empDetails();
 					} catch (GPMExceptions e) {
@@ -236,19 +243,19 @@ public class Main {
 					GPMMethods();
 				}
 				break;
-				case 3 : {
+				case 4 : {
 					AssignProjectToEmployee.AssignProToEmp();
 					GPMMethods();
 				}
 				break;
-				case 4 : {
+				case 5 : {
 					Employee_TotalnoOfDaysWorkedAndTheirWages.EmpTotalDWAndWages();
 					GPMMethods();
 				}
 				break;
-				case 5 : BDOORGPM();
+				case 6 : BDOORGPM();
 				break;	
-				case 6 : {
+				case 7 : {
 					System.out.println(Console.BLUE_BOLD + "Thank you ! Visit again" + Console.RESET);					
 					System.exit(0);
 				}
