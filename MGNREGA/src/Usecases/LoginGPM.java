@@ -10,7 +10,7 @@ import Model.BDO;
 import Model.GPM;
 
 public class LoginGPM {
-	public static void main(String[] args) {
+	public static boolean GPMlogin() {
         Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter Username");
@@ -27,13 +27,16 @@ public class LoginGPM {
 			
 		GPM gpm = dao.loginGPM(name, password);
 			
-			System.out.println("Welcome to G.P.M. "+ gpm.getName());
+			System.out.println("Welcome to Gram Panchayat. "+ gpm.getName());
+			return true;
 			
 		} catch (GPMExceptions e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			System.out.println(e.getMessage());
+			return false;
 		}
+		
 	}
 
 }

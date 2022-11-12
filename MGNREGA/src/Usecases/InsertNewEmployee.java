@@ -10,7 +10,7 @@ import Model.Employee;
 import Model.GPM;
 
 public class InsertNewEmployee {
-	public static void main(String[] args) throws GPMExceptions, EmployeeExceptions {
+	public static void insertEmp() throws GPMExceptions, EmployeeExceptions {
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Enter Employee Name");
 		String empname = sc.next();

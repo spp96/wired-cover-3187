@@ -8,7 +8,7 @@ import Exceptions.BDOExceptions;
 import Model.BDO;
 
 public class LoginBDO {
-	public static void main(String[] args) {
+	public static boolean BDOlogin() {
         Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter Username");
@@ -25,13 +25,17 @@ public class LoginBDO {
 			
 		BDO bdo = dao.loginbdo(name, password);
 			
-			System.out.println("Welcome to B.D.O "+ bdo.getUsername());
+			System.out.println("Welcome B.D.O "+ bdo.getUsername());
+			
+			return true;
 			
 		} catch (BDOExceptions e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			System.out.println(e.getMessage());
+			return false;
 		}
+		
 	}
 
 }

@@ -9,7 +9,7 @@ import Exceptions.ProjectsExceptions;
 import Model.Employee;
 
 public class EmployeeWorkingOnProjectAndTheirWages {
-	public static void main(String[] args) throws EmployeeExceptions {
+	public static void empWonProAndwages() throws EmployeeExceptions {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Project Id ..");
 		int proid = sc.nextInt();

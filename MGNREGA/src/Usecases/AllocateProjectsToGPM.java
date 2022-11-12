@@ -9,11 +9,11 @@ import Exceptions.ProjectsExceptions;
 import Model.*;
 
 public class AllocateProjectsToGPM {
-	public static void main(String[] args) {
+	public static void AllocatePro() {
 		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter Gram Panchayite name ");
+		System.out.println("Enter Gram Panchayat Member name ");
 		String name = sc.next();
 		
 		System.out.println("Enter Project No ...");

@@ -8,7 +8,7 @@ import Exceptions.GPMExceptions;
 
 public class UpdatePasswordOfGPM {
 
-	public static void main(String[] args) {
+	public static void updatePass() {
 		Scanner sc= new Scanner(System.in);
 		
 		System.out.println("Enter Your Username");

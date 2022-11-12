@@ -325,53 +325,6 @@ List<GPM> GramPanchayatMember= new ArrayList<>();
 	}
 
 	@Override
-	public List<Employee> detailsOfEmployee() throws EmployeeExceptions {
-     List<Employee> emplist=new ArrayList<>();
-		
-		try(Connection conn=DBUtil.provideConnection()) {
-			
-			PreparedStatement ps=conn.prepareStatement("select * from employee");
-			
-			ResultSet rs= ps.executeQuery();
-			while(rs.next())
-			{
-				int id=rs.getInt("id");
-				String name=rs.getString("name");
-				String gender = rs.getString("gender");
-				String address=rs.getString("address");
-				String phone=rs.getString("phone");
-				int noofady=rs.getInt("no_duty_day");
-				int proassigned = rs.getInt("projAssigned");
-				int gpoassigned = rs.getInt("gpossigned");
-				int amount=rs.getInt("wages");
-				
-				Employee emp=new Employee();
-				
-				emp.setId(id);
-				emp.setName(name);
-				emp.setGender(gender);
-				emp.setAddress(address);
-				emp.setPhone(phone);
-				emp.setNo_of_days(noofady);
-				emp.setProjAssigned(proassigned);
-				emp.setGpossigned(gpoassigned);
-				emp.setWages(amount);
-				emplist.add(emp);
-			}
-			
-		} catch (SQLException e) {
-			throw new EmployeeExceptions(e.getMessage());
-		}
-		
-		if(emplist.size()==0)
-		{
-			throw new EmployeeExceptions("No Employee Found...");
-		}
-
-		return emplist;
-	}
-
-	@Override
 	public Employee ViewDetailsEmployee(int emid) throws EmployeeExceptions {
           Employee emp = null;
 		
@@ -388,18 +341,10 @@ List<GPM> GramPanchayatMember= new ArrayList<>();
 			String gender = rs1.getString("gender");
 			String address = rs1.getString("address");
 			String phone = rs1.getString("phone");
-			int douty = rs1.getInt("no_duty_day");
-			int proId = rs1.getInt("projAssigned");
+			int duty = rs1.getInt("no_duty_day");
 			int wages = rs1.getInt("wages");
 			
-			PreparedStatement ps2 = conn.prepareStatement("select name from projects where projectNo = ?");
-			
-			ps2.setInt(1, proId);
-			
-			ResultSet rs2 = ps2.executeQuery();
-			
-			while(rs2.next()) {
-				String ProName = rs2.getString("name");
+			  emp = new Employee();
 				
 				emp = new Employee();
 				emp.setName(ename);
@@ -407,14 +352,8 @@ List<GPM> GramPanchayatMember= new ArrayList<>();
 				emp.setAddress(address);
 				emp.setId(empid);
 				emp.setPhone(phone);
-				Projects pro = new Projects();
-				pro.setName(ProName);
-				emp.setProject(pro);
 				emp.setWages(wages);
-				
-				
-				
-			}
+				emp.setNo_of_days(duty);
 					
 		}
 		else {
@@ -595,8 +534,7 @@ List<GPM> GramPanchayatMember= new ArrayList<>();
 			e.printStackTrace();
 			throw new ProjectsExceptions(e.getMessage());
 		}
-		
-		
+			
 		return project;
 	}
 

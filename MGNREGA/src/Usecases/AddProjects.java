@@ -9,7 +9,7 @@ import Model.BDO;
 import Model.Projects;
 
 public class AddProjects {
-	public static void main(String[] args) throws ProjectsExceptions {
+	public static void AddPro() throws ProjectsExceptions {
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Enter Project Name");
 		String projectname = sc.next();

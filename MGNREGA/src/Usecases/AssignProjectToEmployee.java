@@ -8,7 +8,7 @@ import Exceptions.*;
 import Model.Projects;
 
 public class AssignProjectToEmployee {
-	public static void main(String[] args) {
+	public static void AssignProToEmp() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Employee Id ");
 		int emid = sc.nextInt();

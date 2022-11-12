@@ -23,8 +23,6 @@ public interface MGNREGA_DAO {
 	
 	public String createemployee(Employee emp) throws EmployeeExceptions;
 	
-	public List<Employee> detailsOfEmployee()throws EmployeeExceptions;
-	
 	public Employee ViewDetailsEmployee(int emid) throws EmployeeExceptions;
     
     Projects assignemptoproject(int pid,int empid)throws ProjectsExceptions,EmployeeExceptions;

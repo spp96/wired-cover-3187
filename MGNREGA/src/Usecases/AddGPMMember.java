@@ -8,7 +8,7 @@ import Exceptions.GPMExceptions;
 import Model.GPM;
 
 public class AddGPMMember {
-	public static void main(String[] args) throws GPMExceptions {
+	public static void AddGPM() throws GPMExceptions {
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Enter Gram Panchayat Member Name");
 		String membername = sc.next();

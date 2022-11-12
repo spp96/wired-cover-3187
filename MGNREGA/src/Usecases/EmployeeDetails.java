@@ -11,7 +11,7 @@ import Model.Employee;
 import Model.GPM;
 
 public class EmployeeDetails {
-	public static void main(String[] args) throws GPMExceptions, EmployeeExceptions {
+	public static void empDetails() throws GPMExceptions, EmployeeExceptions {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Employee ID ");
 		int id = sc.nextInt();
@@ -22,12 +22,11 @@ public class EmployeeDetails {
 			System.out.println("Employee ID:-"+emp.getId()
 			                   +"\n"+ "Employee Name:- "+emp.getName()+"\n"+
 					            "Employee Gender:- "+emp.getGender() +"\n"+
-			                    "Employee Assingned to Project:- "+emp.getProject().getName()+"\n"+
 					            "Employee Address:- "+emp.getAddress()+"\n"+
 			                    "Employee Phone No.:- "+ emp.getPhone()+"\n"+
+					            "Number of days Employee Worked is:-"+emp.getNo_of_days()+"\n"+
 					            "Employee Wages:- "+emp.getWages());
-			
-			
+				
 			
 		} catch (EmployeeExceptions e) {
 			

@@ -8,7 +8,7 @@ import Exceptions.ProjectsExceptions;
 import Model.Projects;
 
 public class Employee_TotalnoOfDaysWorkedAndTheirWages {
-	public static void main(String[] args) {
+	public static void EmpTotalDWAndWages() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Project ID ...");
 		int proid = sc.nextInt();
