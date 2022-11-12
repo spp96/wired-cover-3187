@@ -102,11 +102,34 @@
 - Gain excessive knowledge on application of Java and MySQL.
 - Enjoyed the process of learning and creating the application.
 
-# Feedback
-> Valuable feedback will be appreciated.
-> You can reach out to me via below medium.
-- [Email](shubhamppatil1996@gmail.com)
-- [Linkedin](https://www.linkedin.com/in/shubham-patil-045478206/)
-# Contributor
-#### Shubham Patil
->[GitHub](https://github.com/spp96)
+# Flow of Application
+
+
+## **Application Start** 
+*Start View Of Application*
+</br>
+![Startofapp](https://user-images.githubusercontent.com/102204260/201489128-cec99c37-5620-436f-9d4f-974bc4a554dd.png)
+</br>
+## **BDO Login** 
+*BDO login Details:- username (shubhamp) and password (spp)*
+*BDO Features will be shown after successfully login*
+</br>
+![BdoAndFeatures](https://user-images.githubusercontent.com/102204260/201489152-0c9f524d-7ab4-42b5-9186-dfc302dafac4.png)
+</br>
+## **GPM Login** 
+*GPM will be login throught crediantial provided by BDO*
+*GPM can change password but username will always be unique which is provided by BDO*
+*All features of GPM will be shown after successfully login*
+</br>
+![GPMAndFeatures](https://user-images.githubusercontent.com/102204260/201489287-d17afdf2-8fd6-4654-adba-0fa21b7bb0fd.png)
+</br>
+
+## **BackUp Functionality** 
+*User can go back to the previous option*
+</br>
+![BackUppanel](https://user-images.githubusercontent.com/102204260/201489316-83c3d983-8e3e-4743-a3e9-25a8f2226939.png)
+
+## **Exception Handling**
+*If user provides wrong input, the appropriate error message will appear*
+</br>
+![image](https://user-images.githubusercontent.com/102204260/201489379-dbcc3336-9693-4bc6-ac70-114cd1ae2983.png)
