@@ -73,6 +73,8 @@
 # Description :-
 The MGNREGA was initiated with the objective of “enhancing livelihood security in rural areas by providing at least 100 days of guaranteed wage employment in a financial year, to every household whose adult members volunteer to do unskilled manual work”.
 
+⚡ Want to Know More About Project 👉: [📼Go through this Video](https://drive.google.com/file/d/1Rljommj02Rwo0pD7dGrm2lb7yax3ulkg/view?usp=sharing)<br>
+
 # Users of this project are :-
 • BDO </br>
 • Gram Panchayat Member(GPM) </br>
