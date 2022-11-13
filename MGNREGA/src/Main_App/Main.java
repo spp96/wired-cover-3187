@@ -89,7 +89,7 @@ public class Main {
 	}
 	 	
 	 	static void BDOMethods() {
-			System.out.println(Console.PURPLE + "+--------------------------------+" + "\n"
+			System.out.println(Console.YELLOW_BOLD_BRIGHT + "+--------------------------------------------------------------+" + "\n"
 							 + "| Welcome To BDO                                             |" + "\n"
 							 + "| 1. Create Projects                                         |" + "\n"
 							 + "| 2. View List of Projects                                   |" + "\n"
@@ -99,7 +99,7 @@ public class Main {
 							 + "| 6. List of Employee Working on that Project and their wages|" + "\n"
 							 + "| 7. Back To Login Panel                                     |" + "\n"
 							 + "| 8. Exit                                                    |" + "\n"
-							 + "+--------------------------------+" + Console.RESET);
+							 + "+------------------------------------------------------------+" + Console.RESET);
 			
 			Scanner sc = new Scanner(System.in);
 			
@@ -177,12 +177,12 @@ public class Main {
 				break;	
 				case 8 : {
 					System.out.println(Console.BLUE_BOLD + "Thank you ! Visit again" + Console.RESET);					
-					System.exit(0);
+					System.exit(0);  
 				}
 			}
 	}
 	 	static void GPMMethods() {
-			System.out.println(Console.CYAN_BOLD + "+--------------------------------+" + "\n"
+			System.out.println(Console.CYAN_BOLD + "+---------------------------------------------------------------------------+" + "\n"
 							 + "| Welcome To GPM                                             |" + "\n"
 							 + "| 1. Change Password                                         |" + "\n"
 							 + "| 2. Create Employee                                         |" + "\n"
@@ -191,7 +191,7 @@ public class Main {
 							 + "| 5. View total numbers of days Employee worked in a Project |" + "\n"
 							 + "| 6. Back To Login Panel                                     |" + "\n"
 							 + "| 7. Exit                                                    |" + "\n"
-							 + "+--------------------------------+" + Console.RESET);
+							 + "+------------------------------------------------------------+" + Console.RESET);
 			
 			Scanner sc = new Scanner(System.in);
 			
