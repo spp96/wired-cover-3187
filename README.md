@@ -71,8 +71,14 @@
 
 <hr />
 
-<h2>Features:</h2>
-  <h3>BDO:</h3>
+# Description :-
+The MGNREGA was initiated with the objective of “enhancing livelihood security in rural areas by providing at least 100 days of guaranteed wage employment in a financial year, to every household whose adult members volunteer to do unskilled manual work”.
+
+# Users of this project are :-
+• BDO </br>
+• Gram Panchayat Member(GPM) </br>
+
+<h3>BDO Roles are:</h3>
 
 - BDO can Login into their account
 - BDO can Create a project
@@ -83,7 +89,7 @@
 - BDO can Allocate  Project to GPM
 - BDO can See List of Employee working on that Project and their wages
 
-<h3>Gram Panchayat Member(GPM):</h3>
+<h3>Gram Panchayat Member(GPM) Roles are:</h3>
 
 - GPM can Login into their Account
 - GPM can Create Employee
@@ -91,7 +97,7 @@
 - GPM can Assign Employee to a Project
 - GPM can View total number of days Employee worked in a project and also their wages
 
-# Technology used 
+# Tech stack and Tools used 
 
 - Java
 - MySQL
@@ -136,3 +142,5 @@
 *If user provides wrong input, the appropriate error message will appear*
 </br>
 ![image](https://user-images.githubusercontent.com/102204260/201489379-dbcc3336-9693-4bc6-ac70-114cd1ae2983.png)
+
+# Thank you for reading 🤗 ! Visit Again......
