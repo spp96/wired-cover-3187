@@ -81,7 +81,7 @@ select sum(no_duty_day)totaldays ,sum(wages)totalwages,p.name  from employee e I
 
 <<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-Update gpm password :-
+Change gpm password :-
 -------------------------------------
 
 update gpm set password = ? where username = ?;
