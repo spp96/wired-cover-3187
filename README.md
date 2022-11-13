@@ -82,7 +82,6 @@ The MGNREGA was initiated with the objective of “enhancing livelihood security
 
 - BDO can Login into their account
 - BDO can Create a project
-- BDO can provide the confirmation of the seat to the Customer
 - BDO can View List Of Project
 - BDO can Create new Gram Panchayat Member(GPM)
 - BDO can View all the GPM
