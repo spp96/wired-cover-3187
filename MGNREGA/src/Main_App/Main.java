@@ -23,7 +23,7 @@ import Usecases.UpdatePasswordOfGPM;
 
 public class Main {
 	public static void main(String[] args) {
-		System.out.println( Console.BANANA_YELLOW+  "::::WELCOME To Mahatma Gandhi National Rural Employment Guarantee Act Application::::"+Console.BLACK_BACKGROUND_BRIGHT);
+		System.out.println( Console.YELLOW_BOLD+  "::::WELCOME To Mahatma Gandhi National Rural Employment Guarantee Act Application::::"+Console.BLACK_BACKGROUND_BRIGHT);
 		System.out.println(Console.YELLOW_BOLD+ "<===================================The Hiring Club===================================>"+ Console.BLACK_BACKGROUND_BRIGHT);
 		
 		BDOORGPM();
@@ -89,7 +89,7 @@ public class Main {
 	}
 	 	
 	 	static void BDOMethods() {
-			System.out.println(Console.YELLOW_BOLD_BRIGHT + "+--------------------------------------------------------------+" + "\n"
+			System.out.println(Console.YELLOW_BOLD + "+--------------------------------------------------------------+" + "\n"
 							 + "| Welcome To BDO                                             |" + "\n"
 							 + "| 1. Create Projects                                         |" + "\n"
 							 + "| 2. View List of Projects                                   |" + "\n"
