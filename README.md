@@ -58,7 +58,6 @@
 | address      | varchar(20) | YES  |     | NULL    |       |
 | noOfEmployee | int         | YES  |     | NULL    |       |
 | totalwages   | int         | YES  |     | NULL    |       |
-| id           | int         | YES  |     | NULL    |       |
 
 <hr />
 
